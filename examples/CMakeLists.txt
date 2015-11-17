@@ -9,7 +9,11 @@ LINK_DIRECTORIES(${CMAKE_BINARY_DIR}/nana/ ${CMAKE_BINARY_DIR}/zlib-1.2.8 ${CMAK
 add_executable(homepage homepage.cpp)
 add_executable(helloworld helloworld.cpp)
 add_executable(notepad notepad.cpp)
+add_executable(calculator calculator.cpp)
+add_executable(widget_show widget_show.cpp)
 
 TARGET_LINK_LIBRARIES(homepage nana.lib ${MS_LIBS})
 TARGET_LINK_LIBRARIES(helloworld nana.lib ${MS_LIBS})
 TARGET_LINK_LIBRARIES(notepad nana.lib ${MS_LIBS})
+TARGET_LINK_LIBRARIES(calculator nana.lib ${MS_LIBS})
+TARGET_LINK_LIBRARIES(widget_show nana.lib ${MS_LIBS})
